@@ -1,0 +1,93 @@
+<Window xmlns="https://github.com/avaloniaui"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        mc:Ignorable="d" d:DesignWidth="800" d:DesignHeight="450"
+        x:Class="demochka.MainWindow"
+        Title="demochka"
+		SizeToContent="WidthAndHeight">
+	<DockPanel>
+		<StackPanel
+			HorizontalAlignment="Center"
+			Orientation="Horizontal"
+			DockPanel.Dock="Top"
+			Width="800"
+			Height="50"
+			Background="#808080"
+			>
+			<Button x:Name="AddClient" 
+					Click="AddClient_OnClick" 
+					Content="Добавить клиента"
+					Background="#C0C0C0"
+					
+					/>
+		</StackPanel>
+		<StackPanel
+			HorizontalAlignment="Center"
+			Orientation="Horizontal"
+			DockPanel.Dock="Bottom"
+			Width="800"
+			Height="50"
+			Background="#808080"
+			>
+		</StackPanel>
+		<StackPanel
+			VerticalAlignment="Center"
+			Orientation="Vertical"
+			Spacing="5"
+			DockPanel.Dock="Left"
+			Width="200"
+			Height="350"
+			Background="#999999"
+			>
+			<TextBlock Margin="1" >Фамилия:</TextBlock>
+			<TextBox
+				Width="180"
+				Height="20"
+				x:Name="SearchFIO"
+				Background="White"
+				Watermark="Введите фамилия"/>
+			<TextBlock Margin="1" >Телефон:</TextBlock>
+			<TextBox
+				Width="180"
+				Height="20"
+				x:Name="SearchPhone"
+				Background="White"
+				Watermark="Введите телефон"/>
+			<TextBlock Margin="1" >Email:</TextBlock>
+			<TextBox
+				Width="180"
+				Height="20"
+				x:Name="SearchEmail"
+				Background="White"
+				Watermark="Введите email"/>
+			<TextBlock Margin="1" >Фильтры:</TextBlock>
+			<ListBox
+				Background="White"
+				Width="180"
+				Height="130"
+				>
+				
+			</ListBox>
+		</StackPanel>
+		<StackPanel
+			VerticalAlignment="Center"
+			Orientation="Vertical"
+			Spacing="5"
+			DockPanel.Dock="Right"
+			Width="600"
+			Height="350"
+			Background="#B2B2B2"
+			>
+			<TextBlock Margin="1" ></TextBlock>
+			<ListBox
+				Background="White"
+				Width="580"
+				Height="320"
+				>
+
+			</ListBox>
+			
+		</StackPanel>
+	</DockPanel>
+</Window>
